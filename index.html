@@ -7,12 +7,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script>
+        let details = navigator.userAgent;
+        let regexp = /android|iphone|kindle|ipad/i;
+        let isMobileDevice = regexp.test(details);
+    
+        if(isMobileDevice){
+            
+            document.getElementById("alert").style.display = "block"
+    
+        } else{
+            document.write();
+            document.getElementById("page").style.display = "block"
+            document.getElementById("alert").style.display = "none"    }
+    </script>
 </head>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;600&family=Libre+Baskerville:wght@700&display=swap');
+*{
 
-    *{
         padding: 0%;
         margin: 0%;
     }
@@ -64,12 +78,14 @@
     }
     #pic{
         margin-left: -145px;
-        padding-left: 50px;
+        padding-left: 120px;
+        height: 500px;
+        width: 905px;
         
     }
     #bi{
         height: 530px;
-        width:653px;
+        width:800px;
         overflow: hidden;
         margin-right: 20px;
     }
@@ -102,14 +118,15 @@
 }
 
 .red{
-    height:560px;
-    width:750px;
+    height:600px;
+    width:700px;
+    margin-left: 260px;
     
 }
 
 #gh{
-    height: 675px;
-    width:910px;
+    height: 575px;
+    width:710px;
     margin-top: 160px;
     margin-left: 100px;
     
@@ -126,7 +143,7 @@
     height: 970px;
 }
 #bet{
-    position: absolute;margin-top: 460px;margin-left: 690px;
+    position: absolute;margin-top: 460px;margin-left: 490px;
 }
 
 #the{
@@ -212,28 +229,51 @@
     font-family: 'Barlow', sans-serif;
     font-weight: bolder;
 }
+#ig1{
+    height: 640px;
+    width: 730px;
+
+}
+#page{
+    overflow: hidden;
+}
+
+#alert{
+   margin-top: 30%;
+    text-align: center;
+    background-color: #62626343;
+    padding: 30px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: none;
+   
+    
+}
+
+
+
 
 </style>
 
 <body>
-    <div>
+    
+    <div id="page">
+    <div id="we">
         <div style="background-color:#3B065E ;display:flex;justify-content:space-between;height: 80px;">
             <img style="height: 70px;width: 90px;margin-left: 50px;margin-top: 30px;" src="ig2.png" alt="">
             <i id="hu" style="color: white;font-size: xx-large;margin-right: 70px;margin-top: 40px;" class="fa-solid fa-bars"></i>
-        
         </div>
-        <div style="display: flex; background-color: #3B065E;">
-            <div style="display:flex ;flex-direction: column;margin-left: 80px;margin-top: 60px; margin-right:100px; ">
+        <div  style="display: flex; background-color: #3B065E;">
+            <div style="display:flex ;flex-direction: column;margin-left: 200px;margin-top: 60px; margin-right:100px; ">
                 
                    <div id="heading" style="height:100px ;width: 400px">  <h1 style="color: white;">Web Software Developers</h1></div>
-              <div style="height:fit-content ;width: 360px;margin-bottom: 20px;">
-                 <p id="para">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-              </div> 
-              <div><p style="color: white;font-size: x-large;">Image from <a style="color: white;font-family:'Open Sans',sans-serif ;" href="#">Freepik</a></p></div>
-              <div><button id="btn">Read more</button></div>
-            </div>
-            
-            <div><img style="height: 610px;width: 600px;"src="ig1.jpg" alt="loading"></div>
+                   <div style="height:fit-content ;width: 360px;margin-bottom: 20px;"><p id="para">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p></div> 
+                  <div><p style="color: white;font-size: x-large;">Image from <a style="color: white;font-family:'Open Sans',sans-serif ;" href="#">Freepik</a></p></div>
+                  <div><button id="btn">Read more</button></div>
+                </div>
+                
+                <img id="ig1" src="ig1.jpg" alt="loading">
        </div>
     </div>
 
@@ -241,7 +281,7 @@
         <div class="head"><h1 >Key Features</h1></div>
         <div id="para1"><p>Sample text. Click to select the txt box. Click again or double click to start editing the text.</p></div>
          <div style="display: flex;margin: 10px 50px;">
-            <div id="bi"  ><img id="pic" style="height: 500px;width: 905px; " src="ig3.jpg" alt=""></div>
+            <div id="bi"  ><img id="pic"  src="ig3.jpg" alt=""></div>
             <div style="margin-bottom:20px ;">
                 <div style="background-color: #29b7dd;display:flex;flex-direction:column;justify-content:center;height:240px;width:260px;margin-bottom:20px ; margin-right: 20px;"><i style="color: white;text-align: center;margin-bottom: 20px; font-size: x-large;" class="fa-solid fa-code"></i><h3 style="color: white;text-align: center;font-size: x-large;">Development</h3>
                 </div>
@@ -261,8 +301,8 @@
     <div style="background-color:#3b065e ; display: flex; height:670px ; ">
         <div>
             <div style="height: 66px;width:530px;margin-top: 25px;margin-left: 150px;"><h1 style="padding-top: 20px;color: white;font-size: 60px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Data Visualization</h1></div>
-            <div><img style="height: 400px;width: 700px;margin-top: 50px;margin-left: 150px;" src="igg1.jpg"></div>
-            <div style="margin-left:150px ;margin-top:60px;color: white;font-size: larger;font-family: 'Open Sans',sans-serif;">Images from <a style="color: white;" href="#">Freepik</a></div>
+            <div><img style="height: 430px;width: 730px;margin-top: 50px;margin-left: 150px;" src="igg1.jpg"></div>
+            <div style="margin-left:150px ;margin-top:25px;color: white;font-size: larger;font-family: 'Open Sans',sans-serif;">Images from <a style="color: white;" href="#">Freepik</a></div>
         </div>
       <div style="display: flex;flex-direction:column">
         <div style="font-family: 'Open Sans',sans-serif;color: white;"><h3 style="word-spacing:10px;margin-left:40px;margin-top:75px;letter-spacing: 2px;">01.GOALS</h3><p style="margin-bottom: 40px;font-size: 16px;word-spacing: 1px;line-height:2;margin-top:20px;margin-left:100px;width: 239px ;height:77px">Sample text. Click to select the text box. Click again or double click to start editing the text.</p><a style="color: white;margin-left:100px;font-size: 16px;" href="#" >MORE</a>
@@ -284,7 +324,7 @@
 <div id="jk" style="display:flex">
 <div  style="display:flex"  >
          <div><img id="gh"src="igg4.jpg"></div>
-         <div><img id="kl" src="igg5.png"></div>
+         
 </div>
 <div id="bet"> <div style="margin-bottom:20px ;display: flex;">
     <div style="background-color: white;display:flex;flex-direction:column;justify-content:center;height:153px;width:200px;margin-bottom:20px ; margin-right: 20px;padding: 20px;"><img style="height: 55px;width:57px;margin-left:63px;margin-bottom: 15px;" src="icon1.png"><h3 style="font-family: cursive;word-spacing: 5px;color: black;text-align: center;font-size: larger;">DEVELOPMENT</h3>
@@ -304,7 +344,7 @@
 </div>
 
 <div id="the">
-    <div><img style="width: 790px ;height: 544px; margin-top: 80px;margin-left: 50px;" src="img4j.jpg"></div>
+    <div><img style="width: 800px ;height: 510px; margin-top: 75px;margin-left: 65px;" src="img4j.jpg"></div>
     <div style="display: flex;flex-direction:column">
     <div style="margin-top: 220px;margin-left: 70px;"><h1 style="margin-bottom: 50px;font-family: Roboto, sans-serif ; font-size: 50px; font-weight: 700;color: #29b7dd ;">IT solutions</h1></div>
      <div style="height: 128px; width: 343px;"> <p style="word-wrap: break-word;font-size:22px;font-family: 'Open Sans',sans-serif;text-align: right;">We collaborate with you to create new value through digital transformation. We have hundreds of specialists at your service.</p></div>
@@ -315,9 +355,9 @@
 
 
 <div style="background-color: #3b065e; display: flex;height: 780px;">
-    <div><img style="height: 550px;width:850px;margin-top:60px;margin-left: 300px;" src="imgg4.jpg"></div>
+    <div><img style="height: 560px;width:750px;margin-top:60px;margin-left: 440px;" src="imgg4.jpg"></div>
 
-    <div style="display: flex; background-color: white;position: absolute;margin-top: 300px;left: 100px;">
+    <div style="display: flex; background-color: white;position: absolute;margin-top: 320px;margin-left: 135px;">
         <div style="display:flex ;flex-direction: column;margin-left: 60px;margin-top: 40px; margin-right:70px; ">
             
                <div id="headingg" style="height:70px ;width: 350px">  <h1 style="color: #3B065E;">Web Analytics</h1></div>
@@ -332,7 +372,7 @@
 </div>
 
 <div style="display:flex ; margin-top: 100px;">
-    <div style="width:410px;height: 190px; margin-left: 150px; margin-right: 80px;">
+    <div style="width:410px;height: 190px; margin-left: 50px; margin-right: 80px;">
         <div><h1 style="margin-bottom: 20px;font-size:40px ;font-family:'Barlow', sans-serif">We are directly involved in t​he process</h1></div>
         <div style="width: 100px; height:5px;background-color:rgb(3, 104, 147) ;"></div>
     </div>
@@ -343,6 +383,16 @@
         <div><button id="btnd" style="margin-bottom: 40px;">Read more</button></div>
     </div>
 </div>
+</div>
+<div id="alert">
+    <h1 style="font-size:xx-large;font-family: 'Libre Baskerville', serif;">Alert!!!!!</h1>
+    <p style="font-family:'Barlow', sans-serif ;">This Site in progress!!</p>
+    <p style="font-family:'Barlow', sans-serif;">Currently Website is only available for Desktop </p>
+    <p style="font-family:'Barlow', sans-serif;">You are using Mobile Device</p>
+    <p style="font-family:'Barlow', sans-serif;">Use a Desktop Site Mode,while using Mobile</p>
+</div>
+
+
 
 
 </body>
