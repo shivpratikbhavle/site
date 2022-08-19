@@ -7,20 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        let details = navigator.userAgent;
-        let regexp = /android|iphone|kindle|ipad/i;
-        let isMobileDevice = regexp.test(details);
-    
-        if(isMobileDevice){
-            
-            document.getElementById("alert").style.display = "block"
-    
-        } else{
-            document.write();
-            document.getElementById("page").style.display = "block"
-            document.getElementById("alert").style.display = "none"    }
-    </script>
+
 </head>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
@@ -235,6 +222,7 @@
 
 }
 #page{
+    display: none;
     overflow: hidden;
 }
 
@@ -246,7 +234,6 @@
     word-spacing: 3px;
     letter-spacing: 2px;
     font-weight: bold;
-    display: none;
    
     
 }
@@ -257,7 +244,6 @@
 </style>
 
 <body>
-    
     <div id="page">
     <div id="we">
         <div style="background-color:#3B065E ;display:flex;justify-content:space-between;height: 80px;">
@@ -388,11 +374,22 @@
     <h1 style="font-size:xx-large;font-family: 'Libre Baskerville', serif;">Alert!!!!!</h1>
     <p style="font-family:'Barlow', sans-serif ;">This Site in progress!!</p>
     <p style="font-family:'Barlow', sans-serif;">Currently Website is only available for Desktop </p>
-    <p style="font-family:'Barlow', sans-serif;">You are using Mobile Device</p>
-    <p style="font-family:'Barlow', sans-serif;">Use a Desktop Site Mode,while using Mobile</p>
 </div>
 
+<script>
+    let details = navigator.userAgent;
+    let regexp = /android|iphone|kindle|ipad/i;
+    let isMobileDevice = regexp.test(details);
 
+    if(isMobileDevice){
+        document.write("you are using a mobile device");
+        document.getElementById("alert").style.display = "block"
+
+    } else{
+        document.write();
+        document.getElementById("page").style.display = "block"
+        document.getElementById("alert").style.display = "none"    }
+</script>
 
 
 </body>
