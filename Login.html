@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
-        *{
+
+        * {
             margin: 0%;
             padding: 0%;
         }
-                        /* Chrome, Safari, Edge, Opera */
-                input::-webkit-outer-spin-button,
-                input::-webkit-inner-spin-button {
-                -webkit-appearance: none;
-                margin: 0;
-                }
 
-                /* Firefox */
-                input[type=number] {
-                -moz-appearance: textfield;
-                }
-
-        #div1{
-             display: flex;
-             flex-direction: column;
-             height: 450px;
-             width: 430px;
-             justify-content: center;
-             text-align: center;
-             padding: 60px 40px;
-             margin-left:auto;
-             margin-right: auto;
-             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-             background-color: rgb(164, 164, 164);
-             margin-top: 50px;
-             margin-bottom: 300px;
-            
-                       
-             
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
         }
-       
-        .val{
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        #div1 {
+            display: flex;
+            flex-direction: column;
+            height: 450px;
+            width: 430px;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 40px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(164, 164, 164);
+            margin-top: 50px;
+            margin-bottom: 300px;
+
+        }
+
+        .val {
             width: 300px;
             height: 30px;
             border: none;
@@ -52,196 +58,221 @@
             font-size: smaller;
             padding: 2px 4px;
             background-color: rgb(215, 212, 212)
-           
-
         }
 
-        #btn{
+        #btn {
             width: 150px;
-            height:50px;
+            height: 50px;
             padding: 7px 20px;
             border-radius: 10px;
             margin-top: 30px;
             border: none;
             font-size: larger;
             background-color: rgb(255, 208, 0);
-           
-           
+
+
         }
 
-        #btn:hover{
+        #btn:hover {
             cursor: pointer;
             background-color: rgba(178, 146, 2, 0.913);
 
         }
 
-        #head1{
+        #head1 {
             margin-bottom: 20px;
         }
-        .icon{
-           margin-top: 20px;
+
+        .icon {
+            margin-top: 20px;
             display: flex;
             justify-content: center;
             text-align: center;
-            
+
         }
 
-        #icon{
+        #icon {
             font-size: x-large;
-           height: 40px;
-           width: 60px;
-           justify-content: space-between;
+            height: 40px;
+            width: 60px;
+            justify-content: space-between;
 
 
         }
 
-        #icon:hover{
+        #icon:hover {
             cursor: pointer;
         }
-        .div12{
-            margin-top: 50px ;
+
+        .div12 {
+            margin-top: 50px;
             margin-bottom: 50px;
         }
-        .nu{
+
+        .nu {
             margin-top: 5px;
             height: 1.5px;
             width: 100px;
             background-color: black;
-            margin-left:74px;
+            margin-left: 74px;
         }
-        #msg{
+
+        #msg {
             width: 300px;
-        
-            
+
+
             border-radius: 5px;
             font-size: smaller;
             padding: 2px 4px;
-            background-color:rgb(215, 212, 212)
+            background-color: rgb(215, 212, 212)
         }
-        #h1{
+
+        #h1 {
             text-align: center;
             font-family: 'Roboto Condensed', sans-serif;
             font-size: 30px;
-            
+
             padding-top: 50px;
-            
+
 
         }
-        .lbl{
+
+        .lbl {
             font-size: larger;
         }
-        #wu{
+
+        #wu {
             height: 2px;
             width: 280px;
             background-color: black;
             margin-left: auto;
             margin-right: auto;
-          
+
         }
+
         /* #dis{
             background-image: url("aes.jpg");
             padding: 170px;
         } */
-        
-        body{
+
+        body {
             background-image: url("aes.jpg");
+            height: 100vh;
             background-repeat: no-repeat;
-            
-           
         }
-        
-        @media screen and (max-width:640px){
-            #h1{
+
+        .input-controls {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width:650px) {
+
+            .input-controls {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            #h1 {
                 justify-content: center;
                 align-items: center;
                 text-align: center;
             }
-            #div1{
-                padding:5px 8px ;
-               
-                width:100%;
-                height: 100%;
+
+            #div1 {
+                padding: 5px 10px;
+                margin-left: 10px !important;
+                margin-right: 10px !important;
+                width: auto;
+                height: auto;
                 font-size: larger;
             }
-            .val{
-                width: 230px !important;
-                margin-right: 10px;
 
+            .lbl {
+                /* display: none; */
+            }
+
+            .nu {
+                margin: 10px auto;
+            }
+
+            .val {
+                width: 100%;
+            }
+
+            #msg {
+                width: 100%;
             }
 
         }
-      
-
     </style>
 </head>
+
 <body>
     <form id="submit">
-<div >
-    <div id="h1">
-        <h1 id="head">Contact Me</h1>
-        <div id="wu"></div>
-    </div>
-   
-    
-    <div id="div1" >
-        <div class="div12">
-                <div  style="display: flex; justify-content: space-between;">
-                <label  class="lbl">Name  </label><br>
-                <input id="name"class="val" type="text" placeholder="Enter your Name " required>
-                </div><br>
-                         <div style="display: flex; justify-content: space-between;">
-                         <label class="lbl">Email</label><br>
-                         <input id="email" class="val" type="email"placeholder="Enter a valid Email" required>
-                         </div><br>
-             <div style="display: flex; justify-content: space-between;">
-             <label class="lbl">Contact  </label>
-             <input id="contact" class="val"type="number" placeholder="Enter your Contact number" required>
-             </div><br>
-                        <div style="display: flex; justify-content: space-between;">
-                        <label class="lbl">Message</label>
+        <div>
+            <div id="h1">
+                <h1 id="head">Contact Me</h1>
+                <div id="wu"></div>
+            </div>
+
+
+            <div id="div1">
+                <div class="div12">
+                    <div class="input-controls">
+                        <label class="lbl">Name : </label>
+                        <input id="name" class="val" type="text" placeholder="Enter your Name " required>
+                    </div><br>
+                    <div class="input-controls">
+                        <label class="lbl">Email :</label>
+                        <input id="email" class="val" type="email" placeholder="Enter a valid Email" required>
+                    </div><br>
+                    <div class="input-controls">
+                        <label class="lbl">Contact : </label>
+                        <input id="contact" class="val" type="number" placeholder="Enter your Contact number" required>
+                    </div><br>
+                    <div class="input-controls">
+                        <label class="lbl">Message :</label>
                         <textarea id="msg" placeholder="Enter your Message" rows="5"></textarea>
-                        </div>
-                    <div><input id="btn" type="submit" value="submit" onclick="alert('Your Form has been Submitted')"></div>
-        </div>
-       <p >Social Media</p>
-       <div class="nu"></div>
-                   <div class="icon">  
+                    </div>
+                    <div><input id="btn" type="submit" value="submit"></div>
+                </div>
+                <p>Social Media</p>
+                <div class="nu"></div>
+                <div class="icon">
                     <i id="icon" class="fa-brands fa-github"></i>
-                   <i id="icon" class="fa-brands fa-instagram"></i>
-                   <i id="icon" class="fa-brands fa-twitter"></i>
-                   </div>
+                    <i id="icon" class="fa-brands fa-instagram"></i>
+                    <i id="icon" class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+    </form>
+
+    <script>
+
+        $(document).ready(function () {
+            $("#submit").submit(function (e) {
+                e.preventDefault();
+                const name = $("#name").val();
+                const email = $("#email").val();
+                const contact = $("#contact").val();
+                const message = $("#msg").val();
+                fetch("https://api.apispreadsheets.com/data/qR1guvfpAG9pNZH6/", {
+                    method: "POST",
+                    body: JSON.stringify({ "data": { "name": name, "email": email, "message": message, "phonenumber": contact } }),
+                }).then(res => {
+                    if (res.status === 201) {
+                        // SUCCESS
+                        console.log("success");
+                    }
+                    else {
+                        // ERROR
+                        console.log("error");
+                    }
+                })
+            })
+        })
+    </script>
     </div>
-</form>
-    
-<script>
- 
- $(document).ready(function(){
-    $("#submit").submit(function(e){
-        e.preventDefault();
-        const name = $("#name").val();
-        const email = $("#email").val();
-        const contact = $("#contact").val();
-        const message = $("#msg").val();
-        fetch("https://api.apispreadsheets.com/data/qR1guvfpAG9pNZH6/", {
-                method: "POST",
-                body: JSON.stringify({"data": {"name":name,"email":email,"message":message,"phonenumber":contact}}),
-            }).then(res =>{
-                if (res.status === 201){
-                    // SUCCESS
-                    console.log("success");
-                    $("#submit").trigger("reset");
-                }
-                else{
-                    // ERROR
-                    console.log("error");
-                }
-            })
-            })
- })
-
-
- 
-</script>
-</div>
 </body>
+
 </html>
