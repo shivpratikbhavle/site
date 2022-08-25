@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+
+      #a {
+        display: flex;
+        justify-content: space-between;
+        margin: 35px 0px;
+        padding-left: 1px;
+      }
+
+      #head {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      #lh {
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 100px;
+        letter-spacing: 5px;
+        margin-left: 10px;
+        padding-left: 10px;
+      }
+
+      #main {
+        display: flex;
+      }
+
+      #mr {
+        width: 75%;
+        margin-right: 25px;
+        margin-left: 310px;
+      }
+
+      #imgg {
+        width: 100%; 
+        padding-bottom: 40px;
+
+      }
+
+      #icon {
+        font-size: x-large;
+        word-spacing: 18px;
+        
+      }
+      #lm {
+        margin-top: 30px;
+        height: 100vh;
+        width: 237px;
+        overflow: scroll;
+        
+        flex-direction: column;
+        position: fixed;
+        margin-left: 60px;
+      }
+
+      #igh {
+        position: relative;
+        
+      }
+
+      #kl {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+      }
+      #inks {
+        display: flex;
+        flex-direction: column;
+        font-size: large;
+        margin-bottom: 90px;
+        font-weight: bolder;
+        font-family: "Montserrat", sans-serif;
+        padding-left: 15px;
+      }
+
+      .links {
+        color: gray;
+        padding: 9px 10px;
+        text-decoration: none;
+      }
+
+      #inks2 {
+        display: flex;
+        flex-direction: column;
+        font-size: medium;
+        font-weight: bolder;
+        font-family: "Montserrat", sans-serif;
+        padding-left: 15px;
+        padding-bottom: 20px;
+      }
+
+      .gh {
+        color: gray;
+        padding: 7px 10px;
+        text-decoration: none;
+      }
+
+      #lp {
+        font-family: "Montserrat", sans-serif;
+        font-size: 68px;
+        color: aliceblue;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+      }
+      #lq {
+        font-family: "Montserrat", sans-serif;
+        font-size: 38px;
+        color: aliceblue;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+      }
+      #btn {
+        font-size: x-large;
+        padding: 15px 25px;
+        background-color: black;
+        color: white;
+      }
+
+      #btn:hover {
+        cursor: pointer;
+        background-color: rgba(149, 148, 148, 0.654);
+        color: black;
+      }
+
+      .links:hover {
+        background-color: rgba(149, 149, 149, 0.706);
+        color: black;
+      }
+
+      .gh:hover {
+        background-color: rgba(149, 149, 149, 0.706);
+        color: black;
+      }
+
+      #jack {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-size: larger;
+      }
+      #opt {
+        
+        margin-left: 50px;
+        padding: 12px 10px;
+      }
+
+      .nks {
+        color: gray;
+        padding: 12px 10px;
+        text-decoration: none;
+        list-style-type: none;
+      }
+
+      .jj {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .jlp{
+        display: flex;
+        justify-content: space-between;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .gut {
+        height: 300px;
+        
+      }
+
+      #ij {
+      
+        height: 200px;
+         /* width: 953px;  */
+        background-color: black;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        padding: 30px 30px;
+        line-height: 30px;
+        width: 92.%;
+       
+      }
+
+      #sh {
+        font-size: xx-large;
+        margin-bottom: 5px;
+      }
+      #gk {
+        width: 95%;
+        font-size: larger;
+        padding: 5px 15px;
+        margin-top: 10px;
+      }
+
+      #ai {
+        margin-top: 10px;
+        font-size: medium;
+        padding: 7px 7px;
+        background-color: rgba(249, 32, 32, 0.913);
+        color: white;
+        letter-spacing: 1.6px;
+      }
+
+      #ai:hover {
+        cursor: pointer;
+        background-color: aliceblue;
+        color: black;
+      }
+
+      #klp {
+        
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        width: 100%;
+      }
+      .fk {
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+        width: 250px;
+      }
+
+      #shiv {
+        display: flex;
+        background-color: #f1f1f1;
+        padding: 40px;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      #kf {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .sb {
+        height: 20px;
+        padding: 5px 15px;
+      }
+
+      #as {
+        padding: 7px;
+        font-size: larger;
+        background-color: black;
+        color: white;
+      }
+
+      #as:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+      }
+
+      .cv{
+        background-color: black;
+        color: white;
+        width: max-content;
+        padding: 5px 8px;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        
+      }
+
+      .cc{
+        background-color: black;
+        color: white;
+        padding: 10px 10px;
+        font-size: larger;
+        position: absolute;
+        top: 134px;
+        left: 60px;
+        border: none;
+         /* display: none;  */
+      }
+      .img{
+        position: relative;
+      }
+
+    .cc:hover{
+      background-color: rgba(128, 128, 128, 0.903);
+      color: black;
+      cursor: pointer;
+    }
+
+    .new{
+      background-color: black;
+     width: 150px;
+     display: none;
+     height: 300p;
+    }
+    
+    .img:hover .new{
+      cursor:pointer;
+      display: block;
+    }
+.display{
+  display: none;
+}
+
+#medi{
+  background-color: black;
+  color: white;
+  display: flex; 
+  width: 100%;
+  justify-content: space-between;
+ 
+  font-family:"Montserrat", sans-serif ;
+  letter-spacing: 4px;
+  display: none;
+  
+}
+
+#no{
+  font-size: x-large;
+  padding: 20px 15px;
+}
+
+#no:hover{
+  background-color: rgb(214, 213, 213);
+  cursor: pointer;
+  color: black;
+}
+
+#blue{
+  padding: 20px 15px;
+}
+#nut{
+  margin-left: 220px;
+  display: none;
+}
+
+#nut:hover{
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 640px) {
+    #nut{
+      display: block;
+    } 
+
+
+  #lm{
+    width: 0%;
+    background-color: #f1f1f1;
+    margin-left:0px ;
+    margin-top: 0px;
+    padding-top: 30px;
+    z-index: 1;
+  }
+
+  #medi{
+    display: block;
+    display: flex;
+    position: fixed;
+  }
+  #mr{
+    margin-left:0% ;
+   
+    
+  }
+  #a{
+    margin-left: 15px;
+    padding-top: 60px;
+    width: 100%;
+  }
+  #imgg{
+    margin-left: 15px;
+    width: 100%;
+  }
+
+  #lp{
+    font-size: 50px;
+    letter-spacing: 2px;
+  }
+  #lq{
+    font-size: 26px;
+    letter-spacing: 1px;
+  }
+  #btn{
+    font-size: large;
+    padding: 8px 11px;
+  }
+  
+  #klp{
+    margin-left: 15px;
+  }
+.jj{
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  height: auto;
+ 
+ 
+
+}
+.gut{
+  height:260px;
+}
+
+.jlp{
+flex-wrap: wrap;
+}
+  #ij{
+    width: 100%;
+  }
+
+  .cc{
+    font-size: small;
+    position: absolute;top: 86px;
+    left: 35px;
+  }
+
+  #shiv{
+    width: 100%;
+  }
+    }
+
+
+  @media screen and (max-width:589px){
+    .gut{
+      height:210px
+
+    }
+    #lp{
+      font-size: 40px;
+    }
+
+    #btn{
+      font-size: medium;
+    }
+    
+  }
+
+  
+    
+   
+      
+    </style>
+  </head>
+
+  <body>
+    <div id="main">
+      <!-- left side -->
+      <div  id="lm">
+        <i id="nut" class="fa-solid fa-xmark"></i>
+        <div><h2 id="lh">LOGO</h2></div>
+        <div id="inks">
+          <a class="links" href="#">Shirts</a>
+          <a class="links" href="#">Dresses</a>
+          <a style="color: black;" id="pic" class="links" href="#">Jeans <i class="fa-solid fa-caret-down"></i></a>
+          <div id="opt" class="display">
+            <ul>
+              <li class="nks"><a class="nks" href="#">skinny</a></li>
+              <li class="nks"><a class="nks" href="#">Relaxed</a></li>
+              <li class="nks"><a class="nks" href="#">Bootcut</a></li>
+              <li class="nks"><a class="nks" href="#">Straight</a></li>
+            </ul>
+          </div>
+          <a class="links" href="#">Jackets</a>
+          <a class="links" href="#">Gymwear</a>
+          <a class="links" href="#">Blazers</a>
+          <a class="links" href="#">Shoes</a>
+        </div>
+
+        <div id="inks2">
+          <a class="gh" href="#">Contact</a>
+          <a class="gh" href="#">Newsletter</a>
+          <a class="gh" href="#">Subscribe</a>
+        </div>
+      </div>
+      <!-- right side -->
+
+
+      <div id="mr">
+        <div id="medi"><h2 id="blue">LOGO</h2> <i id="no" class="fa-solid fa-bars"></i></div>
+                      <div id="a">
+                        <h2 id="head">Jeans</h2>
+                        <div id="icon">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                      </div>
+
+               <div id="igh">
+                    <img id="imgg" src="jeans.jpg" />
+                     
+                      <div id="kl">
+                        <h1 id="lp">New arrivals</h1>
+                        <h1 id="lq">COLLECTION 2016</h1>
+                        <button id="btn">SHOP NOW</button>
+                      </div>
+              </div>
+
+                  <div id="klp">
+                        <div class="jj">
+                              <div style="flex-direction: cloumn">
+                                <div class="img" >
+                                  <p class="cv">New</p>
+                           <div class="new">      <button class="cc">Buy Now <i class="fa-solid fa-cart-shopping"></i></button></div>
+                                  <img class="gut" src="jeans1.jpg" />
+                                </div>
+                                <p>Ripped Skinny jeans</p>
+                                <p>$24.99</p>
+                              </div>
+                              <div style="flex-direction: cloumn">
+                                <img class="gut" src="jeans2.jpg" />
+                                <p>Mega Ripped Jeans</p>
+                                <p>$19.99</p>
+                              </div>
+                            <div style="flex-direction: cloumn">
+                              <img class="gut" src="jeans3.jpg" />
+                              <p>Washed Skinny Jeans</p>
+                              <p>$20.50</p>
+                            </div>
+                            <div style="flex-direction: cloumn">
+                              <img class="gut" src="jeans4.jpg" />
+                              <p>Vintage Skinny Jeans</p>
+                              <p>$14.99</p>
+                            </div>
+                      </div>
+                          <br />
+                             <div class="jlp">
+                                <div style="flex-direction: cloumn">
+                                  <img class="gut" src="jeans2.jpg" />
+                                  <p>Mega Ripped Jeans</p>
+                                  <p>$19.99</p>
+                                </div>
+                                <div style="flex-direction: cloumn">
+                                  <img class="gut" src="jeans3.jpg" />
+                                  <p>Washed Skinny Jeans</p>
+                                  <p>$20.50</p>
+                                </div>
+                                <div style="flex-direction: cloumn">
+                                  <div class="img" >
+                                    <p class="cv">Sale</p>
+                               <div class="new">   <button class="cc">Buy Now <i class="fa-solid fa-cart-shopping"></i></button></div> 
+                                    <img class="gut" src="jeans4.jpg" />
+                                  </div>
+                                  <p>Vintage Skinny Jeans</p>
+                                  <p>$14.99</p>
+                                </div>
+                                <div style="flex-direction: cloumn">
+                                  <img class="gut" src="jeans1.jpg" />
+                                  <p>Ripped Skinny jeans</p>
+                                  <p>$24.99</p>
+                                </div>
+                              </div>
+                    </div>
+    
+                                                <div id="ij">
+                                                  <h1 id="sh">Subsrcibe</h1>
+                                                  <p>To get special offers and VIP treatment:</p>
+                                                  <input id="gk" type="email" placeholder="Enter e-mail" /><br />
+                                                  <button id="ai">Subsrcibe</button>
+                                                </div>
+
+                                              <div id="shiv">
+                                                <div class="fk">
+                                                  <h3>contact</h3><br />
+                                                  <input class="sb" type="text" placeholder="Name" /><br />
+                                                  <input class="sb" type="email" placeholder="Email" /><br />
+                                                  <input class="sb" type="text" placeholder="Subject" /><br />
+                                                  <input class="sb" type="text" placeholder="Message" /><br />
+                                                  <input id="as" type="submit" value="send" /><br />
+                                                </div>
+
+                                                <div id="kf">
+                                                  <a href="#">About</a><br />
+                                                  <a href="#">About us</a><br />
+                                                  <a href="#">We're hiring</a><br />
+                                                  <a href="#">Support</a><br />
+                                                  <a href="#">Find store</a><br />
+                                                  <a href="#">Shipment</a><br />
+                                                  <a href="#">Payment</a><br />
+                                                  <a href="#">Gift card</a><br />
+                                                  <a href="#">Return</a><br />
+                                                  <a href="#">Help</a> <br />
+                                                </div>
+                                              </div>
+     </div>
+     <script>
+     $(document).ready(function(){
+      $("#pic").click( function(){
+        $("#opt").toggleClass("display")
+      })
+
+      $("#no").click(function(){
+        $("#lm").animate({
+          width:("250px")
+
+        },0)
+      })
+
+      $("#nut").click(function(){
+        $("#lm").animate({
+          width:("0px")
+        },0)
+      })
+     })
+  
+    
+ </script>
+
+    </script>
+  </body>
+</html>
