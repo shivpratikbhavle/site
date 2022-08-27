@@ -170,23 +170,12 @@
         list-style-type: none;
       }
 
-      .jj {
-        display: flex;
-        justify-content: space-between;
-        font-family: "Montserrat", sans-serif;
-      }
-
       .jlp{
         display: flex;
         justify-content: space-between;
         font-family: "Montserrat", sans-serif;
       }
 
-      .gut {
-        height: 190px;
-      
-        
-      }
 
       #ij {
       
@@ -227,13 +216,6 @@
         color: black;
       }
 
-      #klp {
-        
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 40px;
-        width: 100%;
-      }
       .fk {
         display: flex;
         flex-direction: column;
@@ -271,49 +253,7 @@
         cursor: pointer;
       }
 
-      .cv{
-        background-color: black;
-        color: white;
-        width: max-content;
-        padding: 5px 8px;
-        position: absolute;
-        left: 0%;
-        top: 0%;
-        
-      }
-
-      .cc{
-        background-color: black;
-        color: white;
-        padding: 10px 10px;
-        font-size: larger;
-        position: absolute;
-        top: 94px;
-        left: 26px;
-        border: none;
-         /* display: none;  */
-      }
-      .img{
-        position: relative;
-      }
-
-    .cc:hover{
-      background-color: rgba(128, 128, 128, 0.903);
-      color: black;
-      cursor: pointer;
-    }
-
-    .new{
-      background-color: black;
-     width: 150px;
-     display: none;
-     height: 300p;
-    }
-    
-    .img:hover .new{
-      cursor:pointer;
-      display: block;
-    }
+     
 .display{
   display: none;
 }
@@ -404,21 +344,6 @@
     font-size: large;
     padding: 8px 11px;
   }
-  
-  #klp{
-    margin-left: 15px;
-  }
-.jj{
-  /* justify-content: center; */
-  flex-wrap: wrap;
-  height: auto;
- 
- 
-
-}
-.gut{
-  height:300px;
-}
 
 .jlp{
 flex-wrap: wrap;
@@ -427,11 +352,6 @@ flex-wrap: wrap;
     width: 100%;
   }
 
-  .cc{
-    font-size: small;
-    position: absolute;top: 86px;
-    left: 35px;
-  }
 
   #shiv{
     width: 100%;
@@ -450,18 +370,42 @@ flex-wrap: wrap;
   #shiv{
     padding: 30px;
   }
+
+  #just{
+    height: 300px;
+
+  }
+
+  .god{
+    flex-wrap: wrap;
+    display: flex;
+     justify-content: space-between;
+  }
+
+  #gpp{
+    margin-left: 15px;
+  }
+
+  .cc{
+    font-size: medium;
+  }
     }
 
 
   @media screen and (max-width:589px){
-    .gut{
-      height:205px
+  .par{
+    font-size: 12px;
+    
+  }
 
-    }
+  .cc{
+    font-size: 10px;
+  }
+#just{
+ width: 150px;
+  height:204px !important;
+}
 
-    .par{
-      font-size: 10px;
-    }
     #lp{
       font-size: 30px;
     }
@@ -479,17 +423,68 @@ flex-wrap: wrap;
       height: 100%;
     }
 
-    .cc{
-      font-size: 10px;
-    position: absolute;
-    top: 67px;
-    left: 17px;
-    }
-    
     #mr{
       margin-right: 15px;
     }
+    
   }
+
+  #just {
+        position: relative;
+        /* width: 250px; */
+        overflow-y: hidden;
+         height: 300px; 
+         /* height: 204px; */        
+      }
+
+      .cv {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 5px 6px;
+        font-size: large;
+      }
+
+      #aes {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(10, 10, 10, 0.42);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+      }
+
+      #aes:hover {
+        opacity: 1;
+      }
+
+      .cc {
+        padding: 5px 7px;
+        font-size: larger;
+        background-color: black;
+        color: white;
+      }
+
+      .cc:hover {
+        background-color: rgba(128, 128, 128, 0.903);
+        color: black;
+        cursor: pointer;
+      }
+
+      .card {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .god{
+        display: flex;
+     justify-content: space-between;
+      }
 
   
     
@@ -551,92 +546,126 @@ flex-wrap: wrap;
                       </div>
               </div>
 
-                  <div id="klp">
-                        <div class="jj">
-                              <div style="flex-direction: cloumn">
-                                <div class="img" >
-                                  <p class="cv">New</p>
-                           <div class="new">      <button class="cc">Buy Now <i class="fa-solid fa-cart-shopping"></i></button></div>
-                                  <img class="gut" src="jeans1.jpg" />
-                                </div>
-                                <p class="par">Ripped Skinny jeans</p>
-                                <p class="par">$24.99</p>
-                              </div>
-                              <div style="flex-direction: cloumn">
-                                <img class="gut" src="jeans2.jpg" />
-                                <p class="par">Mega Ripped Jeans</p>
-                                <p class="par">$19.99</p>
-                              </div>
-                            <div style="flex-direction: cloumn">
-                              <img class="gut" src="jeans3.jpg" />
-                              <p class="par">Washed Skinny Jeans</p>
-                              <p class="par">$20.50</p>
-                            </div>
-                            <div style="flex-direction: cloumn">
-                              <img class="gut" src="jeans4.jpg" />
-                              <p class="par">Vintage Skinny Jeans</p>
-                              <p class="par">$14.99</p>
-                            </div>
+              <div id="gpp">
+                <!-- Upper line -->
+                <div class="god" >
+                  <div class="card">
+                    <div id="just">
+                      <img src="jeans1.jpg" width="100%" height="100%" />
+                      <p class="cv">New</p>
+                      <div id="aes">
+                        <button class="cc">
+                          Buy Now <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
                       </div>
-                          <br />
-                             <div class="jlp">
-                                <div style="flex-direction: cloumn">
-                                  <img class="gut" src="jeans2.jpg" />
-                                  <p class="par">Mega Ripped Jeans</p>
-                                  <p class="par">$19.99</p>
-                                </div>
-                                <div style="flex-direction: cloumn">
-                                  <img class="gut" src="jeans3.jpg" />
-                                  <p class="par">Washed Skinny Jeans</p>
-                                  <p class="par">$20.50</p>
-                                </div>
-                                <div style="flex-direction: cloumn">
-                                  <div class="img" >
-                                    <p class="cv">Sale</p>
-                               <div class="new">   <button class="cc">Buy Now <i class="fa-solid fa-cart-shopping"></i></button></div> 
-                                    <img class="gut" src="jeans4.jpg" />
-                                  </div>
-                                  <p class="par">Vintage Skinny Jeans</p>
-                                  <p class="par">$14.99</p>
-                                </div>
-                                <div style="flex-direction: cloumn">
-                                  <img class="gut" src="jeans1.jpg" />
-                                  <p class="par">Ripped Skinny jeans</p>
-                                  <p class="par">$24.99</p>
-                                </div>
-                              </div>
                     </div>
+                    <p class="par">
+                      Ripped Skinny jeans<br />
+                      $24.99
+                    </p>
+                  </div>
+          
+                  <div class="card">
+                    <div id="just">
+                      <img src="jeans2.jpg" width="100%" height="100%" />
+                    </div>
+                    <p class="par">Mega Ripped Jeans <br />$19.99</p>
+                  </div>
+          
+                  <div class="card">
+                    <div id="just">
+                      <img src="jeans3.jpg" width="100%" height="100%" />
+                    </div>
+                    <p class="par">Washed Skinny Jeansn <br />$20.50</p>
+                  </div>
+          
+                  <div class="card">
+                    <div id="just">
+                      <img src="jeans4.jpg" width="100%" height="100%" />
+                    </div>
+                    <p class="par">
+                      Vintage Skinny Jeans<br />
+                      $14.99
+                    </p>
+                  </div>
+                </div>
+                <br>
+          
+                <!-- Lower line -->
+                <div class="god" >
+                  <div class="card">
+                    <div id="just">
+                      <img src="jeans2.jpg" width="100%" height="100%" />
+                    </div>
+                    <p class="par">Mega Ripped Jeans <br />$19.99</p>
+                  </div>
+          
+                  <div class="card">
+                    <div id="just">
+                      <img src="jeans3.jpg" width="100%" height="100%" />
+                    </div>
+                    <p class="par">Washed Skinny Jeansn <br />$20.50</p>
+                  </div>
+          
+                  <div class="card">
+                    <div id="just">
+                      <img src="jeans4.jpg" width="100%" height="100%" />
+                      <p class="cv">New</p>
+                      <div id="aes">
+                        <button class="cc">
+                          Buy Now <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <p class="par">
+                      Vintage Skinny Jeans<br />
+                      $14.99
+                    </p>
+                  </div>
+                  <div class="card">
+                    <div id="just">
+                      <img src="jeans1.jpg" width="100%" height="100%" />
+                    </div>
+                    <p class="par">
+                      Ripped Skinny jeans<br />
+                      $24.99
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <br>
     
-                                                <div id="ij">
-                                                  <h1 id="sh">Subsrcibe</h1>
-                                                  <p>To get special offers and VIP treatment:</p>
-                                                  <input id="gk" type="email" placeholder="Enter e-mail" /><br />
-                                                  <button id="ai">Subsrcibe</button>
-                                                </div>
+          <div id="ij">
+             <h1 id="sh">Subsrcibe</h1>
+             <p>To get special offers and VIP treatment:</p>
+             <input id="gk" type="email" placeholder="Enter e-mail" /><br />
+            <button id="ai">Subsrcibe</button>
+          </div>
 
-                                              <div id="shiv">
-                                                <div class="fk">
-                                                  <h3>contact</h3><br />
-                                                  <input class="sb" type="text" placeholder="Name" /><br />
-                                                  <input class="sb" type="email" placeholder="Email" /><br />
-                                                  <input class="sb" type="text" placeholder="Subject" /><br />
-                                                  <input class="sb" type="text" placeholder="Message" /><br />
-                                                  <input id="as" type="submit" value="send" /><br />
-                                                </div>
+        <div id="shiv">
+          <div class="fk">
+             <h3>contact</h3><br />
+             <input class="sb" type="text" placeholder="Name" /><br />
+             <input class="sb" type="email" placeholder="Email" /><br />
+             <input class="sb" type="text" placeholder="Subject" /><br />
+            <input class="sb" type="text" placeholder="Message" /><br />
+             <input id="as" type="submit" value="send" /><br />
+           </div>
 
-                                                <div id="kf">
-                                                  <a href="#">About</a><br />
-                                                  <a href="#">About us</a><br />
-                                                  <a href="#">We're hiring</a><br />
-                                                  <a href="#">Support</a><br />
-                                                  <a href="#">Find store</a><br />
-                                                  <a href="#">Shipment</a><br />
-                                                  <a href="#">Payment</a><br />
-                                                  <a href="#">Gift card</a><br />
-                                                  <a href="#">Return</a><br />
-                                                  <a href="#">Help</a> <br />
-                                                </div>
-                                              </div>
+          <div id="kf">
+            <a href="#">About</a><br />
+            <a href="#">About us</a><br />
+            <a href="#">We're hiring</a><br />
+             <a href="#">Support</a><br />
+              <a href="#">Find store</a><br />
+            <a href="#">Shipment</a><br />
+            <a href="#">Payment</a><br />
+            <a href="#">Gift card</a><br />
+            <a href="#">Return</a><br />
+            <a href="#">Help</a> <br />
+               </div>
+              </div>
      </div>
      <script>
      $(document).ready(function(){
